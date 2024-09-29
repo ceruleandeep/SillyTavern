@@ -4022,7 +4022,7 @@ async function executeSlashCommandsWithOptions(text, options = {}) {
 }
 /**
  * Executes slash commands in the provided text
- * @deprecated Use executeSlashCommandWithOptions instead
+ * @deprecated Use executeSlashCommandsWithOptions instead
  * @param {string} text Slash command text
  * @param {boolean} handleParserErrors Whether to handle parser errors (show toast on error) or throw
  * @param {SlashCommandScope} scope The scope to be used when executing the commands.
