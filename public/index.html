@@ -3273,17 +3273,21 @@
                             <h4 class="standoutHeader title_restorable justifySpaceBetween">
                                 <div class="flex-container">
                                     <span data-i18n="Instruct Template">Instruct Template</span>
-                                    <a href="https://docs.sillytavern.app/usage/core-concepts/instructmode/" class="notes-link" target="_blank">
+                                    <a href="https://docs.sillytavern.app/usage/core-concepts/instructmode/" class="notes-link" target="_blank"
+                                       title="Documentation on Instruct Mode" data-i18n="[title]Documentation on Instruct Mode"
+                                    >
                                         <span class="fa-solid fa-circle-question note-link-span"></span>
                                     </a>
                                 </div>
                                 <div class="flex-container">
-                                    <label for="instruct_bind_to_context" class="checkbox_label flex1" title="Bind to Context&#10If enabled, Context templates will be automatically selected based on selected Instruct template name or by preference." data-i18n="[title]instruct_bind_to_context">
-                                        <input id="instruct_bind_to_context" type="checkbox" style="display:none;" />
+                                    <label class="checkbox_label flex1" title="Bind to Context&#10If enabled, Context templates will be automatically selected based on selected Instruct template name or by preference." data-i18n="[title]instruct_bind_to_context">
+                                        <input id="instruct_bind_to_context" type="checkbox" class="visually-hidden" />
+                                        <span class="visually-hidden" data-i18n="[title]instruct_bind_to_context">Bind to Context</span>
                                         <small><i class="fa-solid fa-link menu_button margin0"></i></small>
                                     </label>
-                                    <label for="instruct_enabled" class="checkbox_label flex1" title="Enable Instruct Mode" data-i18n="[title]instruct_enabled">
-                                        <input id="instruct_enabled" type="checkbox" style="display:none;" />
+                                    <label class="checkbox_label flex1" title="Enable Instruct Mode" data-i18n="[title]instruct_enabled">
+                                        <input id="instruct_enabled" type="checkbox" class="visually-hidden" />
+                                        <span class="visually-hidden" data-i18n="[title]instruct_enabled">Enable Instruct Mode</span>
                                         <small><i class="fa-solid fa-power-off menu_button margin0"></i></small>
                                     </label>
                                 </div>
@@ -3456,13 +3460,16 @@
                             <h4 class="standoutHeader title_restorable justifySpaceBetween">
                                 <div class="flex-container">
                                     <span data-i18n="System Prompt">System Prompt</span>
-                                    <a href="https://docs.sillytavern.app/usage/core-concepts/advancedformatting/#system-prompt" class="notes-link" target="_blank">
+                                    <a href="https://docs.sillytavern.app/usage/core-concepts/advancedformatting/#system-prompt" class="notes-link" target="_blank"
+                                        title="Documentation on System Prompt formatting" data-i18n="[title]Documentation on System Prompt formatting"
+                                    >
                                         <span class="fa-solid fa-circle-question note-link-span"></span>
                                     </a>
                                 </div>
                                 <div class="flex-container">
-                                    <label for="sysprompt_enabled" class="checkbox_label flex1" title="Enable System Prompt" data-i18n="[title]sysprompt_enabled">
-                                        <input id="sysprompt_enabled" type="checkbox" style="display:none;" />
+                                    <label class="checkbox_label flex1" title="Enable System Prompt" data-i18n="[title]sysprompt_enabled">
+                                        <input id="sysprompt_enabled" type="checkbox" class="visually-hidden" />
+                                        <span class="visually-hidden" data-i18n="[title]sysprompt_enabled">Enable System Prompt</span>
                                         <small><i class="fa-solid fa-power-off menu_button margin0"></i></small>
                                     </label>
                                 </div>
@@ -4755,7 +4762,11 @@
                                 <div class="fa-solid checked fa-lock right_menu_button" alt=""></div>
                             </label>
                         </div>
-                        <div class="right_menu_button fa-solid fa-list-ul" id="rm_button_characters" title="Select/Create Characters" data-i18n="[title]Select/Create Characters"></div>
+                        <div class="right_menu_button fa-solid fa-list-ul" id="rm_button_characters"
+                             title="Select/Create Characters"
+                             data-i18n="[title]Select/Create Characters"
+                             role="button"
+                        ></div>
                     </div>
                     <div id="HotSwapWrapper" class="alignitemscenter flex-container margin0auto wide100p">
                         <div class="hotswap avatars_inline flex-container scroll-reset-container expander" data-i18n="[no_favs]Favorite characters to add them to HotSwaps" no_favs="Favorite characters to add them to HotSwaps"></div>
@@ -5806,7 +5817,10 @@
             </div>
         </div>
         <div id="character_template" class="template_element">
-            <div class="character_select entity_block flex-container wide100p alignitemsflexstart" chid="" id="">
+            <div class="character_select entity_block flex-container wide100p alignitemsflexstart" chid="" id=""
+                 role="button"
+                 aria-label="[Character] <Character Name>"
+            >
                 <div class="avatar" title="">
                     <img src="">
                 </div>
